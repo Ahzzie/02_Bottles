@@ -10,7 +10,7 @@ namespace _02_Bottles
         public void NoBottles()
         {
             Song song = new Song();
-            Assert.AreEqual(" No more bottles of beer on the wall.", song.CountBottles(0));
+            Assert.AreEqual(" No more bottles of beer on the wall.", Song.CountBottles(0));
 
         }
         [TestMethod]
@@ -20,7 +20,7 @@ namespace _02_Bottles
             Assert.AreEqual("1 bottle of beer on the wall."
                 + " 1 bottle of beer."
                 + " Take one down and pass it around."
-                + " No more bottles of beer on the wall.", song.CountBottles(1));
+                + " No more bottles of beer on the wall.", Song.CountBottles(1));
         }
         [TestMethod]
         public void CountDownFromTwo()
@@ -33,7 +33,7 @@ namespace _02_Bottles
                 + " 1 bottle of beer on the wall."
                 + " 1 bottle of beer."
                 + " Take one down and pass it around."
-                + " No more bottles of beer on the wall.", song.CountBottles(2));
+                + " No more bottles of beer on the wall.", Song.CountBottles(2));
         }
         [TestMethod]
         public void CountDownFromThree()
@@ -50,7 +50,7 @@ namespace _02_Bottles
                 + " 1 bottle of beer on the wall."
                 + " 1 bottle of beer."
                 + " Take one down and pass it around."
-                + " No more bottles of beer on the wall.", song.CountBottles(3));
+                + " No more bottles of beer on the wall.", Song.CountBottles(3));
         }
     }
 }
